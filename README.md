@@ -1,2 +1,3 @@
 # Agente-documento
-Funcionalidade de um agente de IA que lê um documento e retorna informações precisas sobre este mesmo documento.
+O código basicamente  utiliza a llm do gemini flash 1.5, e analisa os dados do documento, ao analisar esses dados(sejam eles .txt, .csv, .docx, .pdf), o código pode te repassar a informção que vc quiser, contanto que ela esteja no documento, no Prompt Engineering foi dito que suas respostas tem de ser especificadamente sobre o documento e não foi permitido que ele pegue dados externos ao documento(nem coloquei as tools de qualquer forma), portanto os dados não virão sob algum viés, visto que ele só tem acesso ao que foi passado para ele.
+Suas dependênciad sao: google-generativeai, pypdf, python-docx, pandas, os(para diferentes arquivos) e textwrap(que é só para ficar bonitinho).
